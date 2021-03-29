@@ -11,13 +11,13 @@ public interface CustomProduct {
 
     Integer getId();
 
-    String name();
+    String getName();
 
     boolean isActive();
 
     Category getCategory();
 
-    Attachment getAttachment();
+    Attachment getPhoto();
 
     String getCode();
 
