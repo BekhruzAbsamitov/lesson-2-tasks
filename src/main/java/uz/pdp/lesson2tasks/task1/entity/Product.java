@@ -18,11 +18,15 @@ import javax.persistence.OneToOne;
 @Entity
 @RestResource(exported = false)
 public class Product extends AbsEntity {
+
     @ManyToOne(optional = false)
     private Category category;
+
     @OneToOne
     private Attachment photo;
+
     private String code;
+
     @ManyToOne(optional = false)
     private Measurement measurement;
 }
